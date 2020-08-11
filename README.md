@@ -28,6 +28,12 @@ To keep a track of the performance and to avoid overfitting problems of the mode
 ## Approach 2 (Transfer Learning)
 The approach used to solve this problem is the transfer learning approach using the VGGNet pre-trained model along with a self-defined softmax layer that is used to classify the 8 different forms of dance present in the dataset.
 
+<p align="center">
+    <img src="imagenet_vgg16.png">
+</p>
+
+<p align="center">Source: www.google.com</p>
+
 Layers appended after the Pre-trained Model-
 - x = Flatten()(vgg.output)
 - x = Dense(1024, activation = 'relu')(x)
