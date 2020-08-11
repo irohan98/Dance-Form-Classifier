@@ -18,7 +18,14 @@ The eight categories of Indian classical dance are as follows:
 - Mohiniyattam
 
 ## Dataset Development
-Dataset Development- Based on the amount of available data in the training set provided, I have employed multiple data augmentation techniques to further improve the number of examples for each dance form in the dataset. 
+The data folder consists of two folders and two .csv files. The details are as follows:
+
+- train: Contains 364 images for 8 classes ['manipuri','bharatanatyam','odissi','kathakali','kathak','sattriya','kuchipudi','mohiniyattam']
+- test: Contains 156 images
+- train.csv: 364 x 2
+- test.csv: 156 x 1
+
+Based on the amount of available data in the training set provided, I have employed multiple data augmentation techniques to further improve the number of examples for each dance form in the dataset. 
 To keep a track of the performance and to avoid overfitting problems of the model, I have divided the dataset(only train folder) into a train/val split (80:20) with the augmented dataset.
 - training examples - 291    
 - test examples     - 73
@@ -49,6 +56,7 @@ Layers appended after the Pre-trained Model-
 - height_shift_range = 0.2,
 - shear_range = 0.2,
 - horizontal_flip = True
+
 The above values can be varied and can be experimented with.
 
 ## Tools and Libraries
@@ -63,7 +71,7 @@ The above values can be varied and can be experimented with.
 - cv2
 
 ## Model Architecture
-You can see the entire model architecture in the above colab notebook using the code shown below
+You can see the architecture of the model in the above colab notebook using the code shown below
 ```
 model.summary()
 ```
@@ -71,11 +79,14 @@ model.summary()
 ## Environment
 Google Colaboratory
 
+## Evaluation metric
+- score = {100* f1\_score(actual\_values,predicted\_values,average = 'weighted')}
+
 ## Final Result
-- Score - 62.67330 
+- Competition Score- 58.53426 (using approach 2) 
 - Model has been trained for a total of 40 epochs with a batch size = 32 
 
-Hope you enjoyed going through my analysis! 😄
+**Hope you enjoyed going through my analysis! 😄**
 
 
 
