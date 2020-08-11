@@ -24,6 +24,7 @@ To keep a track of the performance and to avoid overfitting problems of the mode
 - test examples     - 73
 
 ## Approach 1 (Own Model)
+This approach was a model made from scratch. The layers that were defined are mostly similar to the layers of the CNN used for the Fashion_MNIST dataset. This approach will get you familiar with the behaviour of the CNN with the Dataset and give you an idea of "What Exactly is Happening!" when you add/remove layers and train the model for a few epochs. 
 
 ## Approach 2 (Transfer Learning)
 The approach used to solve this problem is the transfer learning approach using the VGGNet pre-trained model along with a self-defined softmax layer that is used to classify the 8 different forms of dance present in the dataset.
@@ -32,7 +33,7 @@ The approach used to solve this problem is the transfer learning approach using 
     <img src="imagenet_vgg16.png">
 </p>
 
-<p align="center">Source: www.google.com</p>
+<p align="center">Source: https://neurohive.io/en/popular-networks/vgg16/</p>
 
 Layers appended after the Pre-trained Model-
 - x = Flatten()(vgg.output)
@@ -41,32 +42,40 @@ Layers appended after the Pre-trained Model-
 - prediction = Dense(8, activation='softmax')(x)
 
 ## Techniques Used
-rescale = 1/255.0,
-    rotation_range = 20,
-    zoom_range = 0.2,
-    width_shift_range = 0.2,
-    height_shift_range = 0.2,
-    shear_range = 0.2,
-    horizontal_flip = True
+- rescale = 1/255.0,
+- rotation_range = 20,
+- zoom_range = 0.2,
+- width_shift_range = 0.2,
+- height_shift_range = 0.2,
+- shear_range = 0.2,
+- horizontal_flip = True
+The above values can be varied and can be experimented with.
 
 ## Tools and Libraries
 - keras
-- tensorflow
-- sklearn
+- tensorflow (2.x)
+- tensorboard
+- sklearn 
 - numpy
 - pandas
 - matplotlib
 - os 
 - cv2
 
+## Model Architecture
+You can see the entire model architecture in the above colab notebook using the code shown below
+```
+model.summary()
+```
+
 ## Environment
 Google Colaboratory
 
-## Model Architecture
-
 ## Final Result
-- Score- 62.67330 
-- Model has been trained for a total of 40 epochs with a batch size=32
+- Score - 62.67330 
+- Model has been trained for a total of 40 epochs with a batch size = 32 
+
+Hope you enjoyed going through my analysis! 😄
 
 
 
