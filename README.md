@@ -1,6 +1,7 @@
 # Dance-Form-Classifier
 ### Hi there! 👋
 This was my first time participating in a competition and it was a great experience!
+
 ## Problem Statement
 This International Dance Day, an event management company organized an evening of Indian classical dance performances to celebrate the rich, eloquent, and elegant art of dance. After the event, the company plans to create a microsite to promote and raise awareness among people about these dance forms. However, identifying them from images is a difficult task.
 
@@ -85,6 +86,10 @@ Google Colaboratory
 ## Final Result
 - Competition Score- 58.53426 (using approach 2) 
 - Model has been trained for a total of 40 epochs with a batch size = 32 
+
+I got a rank of 409/5864 (Top 6.9%) for the model that I have developed. Still a long way to go! 😄
+
+https://www.hackerearth.com/challenges/competitive/hackerearth-deep-learning-challenge-identify-dance-form/leaderboard/identify-the-dance-form-deea77f8/page/9/
 
 **Hope you enjoyed going through my analysis! 😄**
 
