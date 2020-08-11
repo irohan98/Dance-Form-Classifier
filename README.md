@@ -23,3 +23,58 @@ To keep a track of the performance and to avoid overfitting problems of the mode
 - training examples - 291    
 - test examples     - 73
 
+## Approach 1 (Own Model)
+
+## Approach 2 (Transfer Learning)
+The approach used to solve this problem is the transfer learning approach using the VGGNet pre-trained model along with a self-defined softmax layer that is used to classify the 8 different forms of dance present in the dataset.
+
+Layers appended after the Pre-trained Model-
+- x = Flatten()(vgg.output)
+- x = Dense(1024, activation = 'relu')(x)
+- x = Dropout(0.20)(x)
+- prediction = Dense(8, activation='softmax')(x)
+
+## Techniques Used
+rescale = 1/255.0,
+    rotation_range = 20,
+    zoom_range = 0.2,
+    width_shift_range = 0.2,
+    height_shift_range = 0.2,
+    shear_range = 0.2,
+    horizontal_flip = True
+
+## Tools and Libraries
+- keras
+- tensorflow
+- sklearn
+- numpy
+- pandas
+- matplotlib
+- os 
+- cv2
+
+## Environment
+Google Colaboratory
+
+## Model Architecture
+
+## Final Result
+- Score- 62.67330 
+- Model has been trained for a total of 40 epochs with a batch size=32
+
+
+
+<!--
+**irohan98/irohan98** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
