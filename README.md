@@ -87,7 +87,7 @@ Google Colaboratory
 - Competition Score- 58.53426 (using approach 2) 
 - Model has been trained for a total of 40 epochs with a batch size = 32 
 
-I got a rank of 409/5864 (Top 6.9%) for the model that I have developed. Still a long way to go! 😄                                             https://www.hackerearth.com/challenges/competitive/hackerearth-deep-learning-challenge-identify-dance-form/leaderboard/identify-the-dance-form-deea77f8/page/9/
+I got a rank of **409/5864 (Top 6.9%)** for the model that I have developed. Still a long way to go! 😄                                             https://www.hackerearth.com/challenges/competitive/hackerearth-deep-learning-challenge-identify-dance-form/leaderboard/identify-the-dance-form-deea77f8/page/9/
 
 **Hope you enjoyed going through my analysis! 😄**
 
